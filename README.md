@@ -6,7 +6,7 @@ Hi! 👋
 This is my **very first time working on OpenWrt device support**, and this repository is where I'll document my journey of bringing OpenWrt support to my ZBT Z8114AX-DS router.
 
 ## Screenshot
-![screenshot](https://github.com/vigilante-1337/openwrt-zbt-z8114ax/blob/main/assets/Screenshot_20261010_155936.png)
+![screenshot](https://github.com/vigilante-1337/openwrt-zbt-z8114ax/blob/main/assets/Screenshot%202026-10-11%20175841.png)
 
 ## Why This Router?
 
