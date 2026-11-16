@@ -45,6 +45,7 @@ Instead of choosing the easy route, I decided to try bringing OpenWrt support to
 | MicroSD        | 1×                |
 | UART           | 3.3V TTL          |
 | USB            | 1× USB            |
+| PCIE           | 1* Cooling fan    |
 
 ## Mac Address
 So the mac address live on the Factory partition so you just want to dump the partition and run hexadecimal dump tool like *xxd* and you will see something like this
@@ -55,6 +56,25 @@ So the mac address live on the Factory partition so you just want to dump the pa
 | WAN   | f8:5e:3c:9d:b9:xx | 0x24   |
 | 2.4G  | f8:5e:3c:9d:b9:xx | 0x04   |
 | 5.8G  | f8:5e:3c:9d:b9:xx | 0x0a   |
+
+## Bootlog, vendor DtB, GPIO DEBUG
+
+Before you start dealing with anything, you should have these three files so you can refer to them. The vendor bootlog can often tell you what hardware are being initialized.  Later, you can refer to the DTB file to make the DTS file
+
+```
+# Grab bootlog
+sudo picocom -b <baudrate> --logfile=bootlog.txt
+
+# vendor DTB
+scp root@192.168.1.1:/sys/firmware/fdt ~/vendor.dtb
+dtc -I dtb -O dts -o vendor.dts ~/vendor.dtb
+
+# gpio debug
+scp root@192.168.1.1:/sys/kernal/debug/gpio ~/gpio.txt
+```
+
+
+
 
 ## Disclaimer
 
