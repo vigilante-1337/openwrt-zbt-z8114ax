@@ -70,7 +70,7 @@ scp root@192.168.1.1:/sys/firmware/fdt ~/vendor.dtb
 dtc -I dtb -O dts -o vendor.dts ~/vendor.dtb
 
 # gpio debug
-scp root@192.168.1.1:/sys/kernal/debug/gpio ~/gpio.txt
+scp root@192.168.1.1:/sys/kernel/debug/gpio ~/gpio.txt
 ```
 
 
