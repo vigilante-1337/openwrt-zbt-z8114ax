@@ -29,23 +29,6 @@ Instead of choosing the easy route, I decided to try bringing OpenWrt support to
 
 ## Hardware
 
-- SoC: MediaTek MT7981B
-- CPU: 2× ARM Cortex-A53, up to 1.3 GHz
-- Wi-Fi: MediaTek MT7976CN
-- Wi-Fi: Wi-Fi 6 / 802.11ax
-- RAM: 512MB DDR4 (standard)
-- RAM: 1GB DDR4 (my unit)
-- Flash: 128MB SPI-NAND
-- Ethernet: 1× WAN + 1× LAN
-- Ethernet switch: MediaTek MT7531
-- 5G: 1× M.2 slot
-- SIM: 2× Nano-SIM
-- Wi-Fi antennas: 2× external
-- 5G antennas: 4× external
-- MicroSD: 1×
-- UART: 3.3V TTL
-- USB: 1× USB
-
 | Component      | Specification     |
 |---------------:|:------------------|
 | SoC            | MediaTek MT7981B  |
