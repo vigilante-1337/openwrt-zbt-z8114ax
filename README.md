@@ -30,7 +30,7 @@ Instead of choosing the easy route, I decided to try bringing OpenWrt support to
 ## Hardware
 
 | Component      | Specification     |
-|:--------------:|:-----------------:|
+|:-------------- |:------------------|
 | SoC            | MediaTek MT7981B  |
 | CPU            | 2× ARM Cortex-A53 |
 | Wi-Fi          | MediaTek MT7976CN |
