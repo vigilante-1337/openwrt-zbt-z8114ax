@@ -18,6 +18,15 @@ It's compact enough to carry around, has a cool design, and has hardware that ma
 
 Instead of choosing the easy route, I decided to try bringing OpenWrt support to it myself.
 
+## Current Progress
+
+- [x] Identify the SoC
+- [x] Collect basic hardware information
+- [x] Develop and test the device tree (DTS)
+- [x] Verify NAND flash layout and partitions
+- [x] Build and test a working OpenWrt image
+- [x] Submit device support upstream (eventually!)
+
 ## Hardware
 
 - SoC: MediaTek MT7981B
@@ -36,6 +45,22 @@ Instead of choosing the easy route, I decided to try bringing OpenWrt support to
 - MicroSD: 1×
 - UART: 3.3V TTL
 - USB: 1× USB
+| Component      | Specification     |
+|---------------:|:------------------|
+| SoC            | MediaTek MT7981B  |
+| CPU            | 2× ARM Cortex-A53 |
+| Wi-Fi          | MediaTek MT7976CN |
+| RAM            | 512MB DDR4        |
+| Flash          | 128MB SPI-NAND    |
+| Ethernet       | 1× WAN + 1× LAN   |
+| Switch         | MediaTek MT7531   |
+| 5G Slot        | 1× M.2 slot       |
+| SIM            | 2× Nano-SIM       |
+| Wi-Fi antennas | 2× external       |
+| 5G antennas    | 4× external       |
+| MicroSD        | 1×                |
+| UART           | 3.3V TTL          |
+| USB            | 1× USB            |
 
 ## Mac Address
 So the mac address live on the Factory partition so you just want to dump the partition and run hexadecimal dump tool like *xxd* and you will see something like this
@@ -46,15 +71,6 @@ So the mac address live on the Factory partition so you just want to dump the pa
 | WAN   | f8:5e:3c:9d:b9:xx | 0x24   |
 | 2.4G  | f8:5e:3c:9d:b9:xx | 0x04   |
 | 5.8G  | f8:5e:3c:9d:b9:xx | 0x0a   |
-
-## Current Progress
-
-- [x] Identify the SoC
-- [x] Collect basic hardware information
-- [x] Develop and test the device tree (DTS)
-- [x] Verify NAND flash layout and partitions
-- [x] Build and test a working OpenWrt image
-- [x] Submit device support upstream (eventually!)
 
 ## Disclaimer
 
