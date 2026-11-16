@@ -37,6 +37,16 @@ Instead of choosing the easy route, I decided to try bringing OpenWrt support to
 - UART: 3.3V TTL
 - USB: 1× USB
 
+## Mac Address
+So the mac address live on the Factory partition so you just want to dump the partition and run hexadecimal dump tool like *xxd* and you will see something like this
+
+| Label | Mac Address       | Offset |
+|:-----:|:-----------------:|:------:|
+| LAN   | f8:5e:3c:9d:b9:xx | 0x2a   |
+| WAN   | f8:5e:3c:9d:b9:xx | 0x24   |
+| 2.4G  | f8:5e:3c:9d:b9:xx | 0x04   |
+| 5.8G  | f8:5e:3c:9d:b9:xx | 0x0a   |
+
 ## Current Progress
 
 - [x] Identify the SoC
