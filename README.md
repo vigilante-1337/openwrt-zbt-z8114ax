@@ -45,6 +45,7 @@ Instead of choosing the easy route, I decided to try bringing OpenWrt support to
 - MicroSD: 1×
 - UART: 3.3V TTL
 - USB: 1× USB
+
 | Component      | Specification     |
 |---------------:|:------------------|
 | SoC            | MediaTek MT7981B  |
