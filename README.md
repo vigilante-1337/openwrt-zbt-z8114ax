@@ -1,5 +1,5 @@
-# z8114ax-openwrt
-# OpenWrt Support for ZBT Z8114AX-DS
+# Unofficial openwrt support for ZBT Z8114AX-DS
+- openwrt v25.12.6
 
 Hi! 👋
 
