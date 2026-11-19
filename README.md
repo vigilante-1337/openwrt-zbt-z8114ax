@@ -1,7 +1,5 @@
 # Unofficial openwrt support for ZBT Z8114AX-DS
-- openwrt v25.12.6
 
-#
 Hi! 👋
 
 This is my **very first time working on OpenWrt device support**, and this repository is where I'll document my journey of bringing OpenWrt support to my ZBT Z8114AX-DS router.
