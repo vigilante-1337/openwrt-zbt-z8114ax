@@ -51,10 +51,10 @@ So the mac address live on the Factory partition so you just want to dump the pa
 
 | Label | Mac Address       | Offset |
 |:-----:|:-----------------:|:------:|
-| LAN   | f8:5e:3c:9d:b9:xx | 0x2a   |
-| WAN   | f8:5e:3c:9d:b9:xx | 0x24   |
-| 2.4G  | f8:5e:3c:9d:b9:xx | 0x04   |
-| 5.8G  | f8:5e:3c:9d:b9:xx | 0x0a   |
+| LAN   | f8:5e:3c:xx:xx:xx | 0x2a   |
+| WAN   | f8:5e:3c:xx:xx:xx | 0x24   |
+| 2.4G  | f8:5e:3c:xx:xx:xx | 0x04   |
+| 5.8G  | f8:5e:3c:xx:xx:xx | 0x0a   |
 
 ## Bootlog, vendor DtB, GPIO DEBUG
 
